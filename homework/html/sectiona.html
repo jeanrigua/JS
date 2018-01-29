@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<head>
+<title>SECTION A: Currency Converter </title>
+<script  src = "../js/sectiona.js"> </script>
+<style> 
+#container{
+	background-color: lightGray;
+	width: 450px;
+	margin-left: auto;
+	margin-right: auto;
+	border: solid 2px #990000;
+}
+
+#title{
+	width: 400px;
+	background-color: #990000;
+	color:white;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+#content{
+	text-align: center;
+	align-content: center;
+	background-color: #ffcc66;
+	width: 400px;
+	margin-left: auto;
+	margin-right: auto;
+	border:collapse;
+	padding-top: 5px;
+	padding-bottom: 20px;
+}
+
+input[type=number] {
+    width: 250px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border:2px solid lightGray;
+    background-color: none;
+    border-radius: 4px;
+}
+
+input[type=button]{
+    background-color: #990000;
+    border: solid;
+    border-radius: 4px; 
+    border-color: white;
+    border-width:2px;
+    color: #ffcc66;
+    padding: 5px 20px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: normal;
+    width: 250px;
+}
+
+ h2 {
+ 	color: white;
+ 	font-family: Arial;
+ 	text-align: center;
+ 	padding: 10px 20px;
+	text-shadow: 2px 2px 2px #000;
+ }
+
+ #output{
+ 	font-family: Arial;
+ 	text-align: center;
+ }
+
+</style>
+</head>
+	
+<body >
+	<div id = "container">
+		<div id = "header"></div>
+	    <div id="title"> <h2> Currency Converter</h1> </div>
+		<div id = "content" class = "row">
+
+			<form name="sectiona" enctype="text/plain" action="#" onsubmit="convert();">
+				    <p><font face="Arial" color="black">Canadian Dollar</font><br>
+			    	<input type ="number" id ="cad"   placeholder="Enter Amount"/>
+					
+			    	<p><font face="Arial" color="black">US Dollar</font><br> 
+			    	<input type ="number" id= "us" placeholder ="$0.75" disabled />
+					<p><input type ="button"  value="Convert" onclick=convert()> <br> 
+					
+					
+					<div id="output" style="color:black" font-family="Arial" font-size:"35px"> The exchange rate in US Dollar is:
+				  </div> 
+			</form>
+
+		</div>
+    </div>
+			
+</body>
+</html>

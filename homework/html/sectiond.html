@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>List Box</title>
+<script type="text/javascript" src="../js/allseasons.js"></script>
+
+<style> 
+
+select{
+	color:white;
+}
+
+.semi-square {
+   -webkit-border-radius: 5px;
+   -moz-border-radius: 5px; 
+   border-radius: 5px; 
+}
+
+.styled-select {
+   border: none;
+   font-size: 18px;
+   height: 35px;
+   padding: 5px; 
+   width: 150px;
+   text-shadow: 2px 2px 2px #000;
+   font-family: Arial;
+}
+
+ .maroon    { background-color: #990000 } 
+
+.picframe {
+	border: groove 8px  #990000 ;
+	padding: 5px 5px 5px 5px;
+}
+th {
+ 	font-family: Arial;
+ 	text-align: center;
+	text-shadow: 2px 2px 2px #000;
+	font-size: 25px;
+}
+</style>
+
+</head>
+<body>
+<div align = "center" >
+	<table>	
+		<th>
+			Four Seasons
+		</th>
+		<tr>
+		<td><img class = "picframe" id = "season" src = "../images/winter.jpg" width="600px" height="350px"/> </td>
+		</tr>
+		<tr>
+			<td><select class= "styled-select maroon semi-square"  name ="images" onChange="changepic('season','images',this.value)">
+				<option value = "winter.jpg" > Winter</option>
+				<option value = "spring.jpg"> Spring </option>
+				<option value = "summer.jpg"> Summer </option>
+				<option value = "autumn.jpg" > Fall </option>
+			    </select>
+    </table>
+</div>
+</body>
+</html>

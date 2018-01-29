@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript</title>
+	
+	<style type="text/css" type="stylesheet">  
+	    #container {
+			padding-right: none;
+		}
+
+
+		#header{
+            margin-left: 25px;
+    		margin-right: 25px;
+			margin-top: 0px;
+		
+		}
+		#navigation {
+			margin-left: 15px;
+    		margin-right: 15px;
+    		box-sizing: border-box;
+    		width:250px;
+    		float: left; 	
+			text-shadow: 2px 2px 2px #000;
+		}
+		#main{
+    		float: left;
+    		width: 100px;
+    	}
+        h1 {
+    		color: white;
+    		font-family: Arial;
+    		padding: 35px 35px;
+			background-image: url("../images/headerbg.png");
+			background-size: 1300px  105px;
+			text-shadow: 3px 3px 3px #000;
+        }
+		ul {
+			list-style-type: none;
+			display: block;
+			margin:0;
+			padding: 0px 50px 75px 15px;
+			width:200px;
+		}
+		#navigation ul li a{
+            display: block;
+    		background-color: #990000;
+    		color: white;
+    		font-family: Arial;
+ 	        font-size: 20px;
+ 	        text-decoration: none; 
+ 	        border-bottom: 1px solid white; 
+ 	        padding: 15px 15px;
+			margin-bottom: 0;
+			
+        }
+        #navigation ul li a:hover {
+    		background-color: #e6b960;
+    		color: black;
+    		transition: linear all 0.40s;
+    		margin-left: 10px;
+        }
+        #navigation ul li a.active {
+		background-color : #e6b960;
+        color: black
+        }
+	
+    .timeStyle{
+		background-color: #990000;
+		border: 2px #e6b960 inset;
+		border-radius: 10px;
+		padding: 8px;
+		color: white;
+		font-family: "Arial Black", Gadget, sans-serif;
+		font-size: 20px;
+		font-weight:bold;
+		letter-spacing: 2px;
+		display:inline;
+		margin: 25px;
+		clear: left;
+}
+
+.clocklabel{
+	font-family: Arial;
+	font-size: 30px;
+	text-align: center;
+	font-weight: bold;
+}
+
+.footer {
+	clear:both;
+	text-align: center;
+	font-family: Arial;
+	background-color: #990000;
+	margin-left: 25px;
+    margin-right: 25px;
+	color: white;
+}
+	   </style>
+<script src="../js/index.js"></script>
+
+</head>
+<body onload="pageLoad()">
+	<div id = "container">
+			<marquee behavior="scroll" bgcolor="lightyellow" loop="-1" width="100%">
+			<i><font color="#990000"><strong>Today's date is :<span id="time"></span></strong></font></i>
+		    </marquee> 
+	       <script>
+			var today = new Date();
+            document.getElementById('time').innerHTML= today;
+	       </script>
+		<div class= "header" id = "header" >
+			<h1> JavaScript Project</h2>
+		</div>
+
+        <div id= "navigation">
+        <ul>
+  			<li><a href="home.html" target="content"  >Home</a></li>
+  			<li><a href="sectiona.html" target="content">Section A</a></li>
+  			<li><a href="sectionb.html" target="content">Section B</a></li>
+  			<li><a href="sectionc.html" target="content" >Section C</a></li>
+  			<li><a href="sectiond.html" target="content">Section D</a></li>
+		</ul>	
+			<div class = "clocklabel">The time is:</div><br>
+			<div id = "timeDisplay" class = "timeStyle" >
+				<script type ="text/javascript" language ="javascript" src= "../js/time.js"></script>
+	        </div>
+		</div>
+
+        <div id= "main">
+			 <iframe name="content" src="home.html" overflow:"hidden" width="1000" height="500x" align="middle" frameborder="0" )></iframe>
+		</div>
+
+		<div class ="footer">
+			&copy Copyright 2017 - Jeanette Stuart
+		</div>
+		
+    </div>
+
+
+
+</body>
+</html>
